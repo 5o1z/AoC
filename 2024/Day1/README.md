@@ -1,4 +1,4 @@
-### Problem
+### --- Day 1: Historian Hysteria ---
 
 #### --- Part One ---
 The Chief Historian is always present for the big Christmas sleigh launch, but nobody has seen him in months! Last anyone heard, he was visiting locations that are historically significant to the North Pole; a group of Senior Historians has asked you to accompany them as they check the places they think he was most likely to visit.
@@ -74,44 +74,3 @@ For these example lists, here is the process of finding the similarity score:
 So, for these example lists, the similarity score at the end of this process is 31 (9 + 4 + 0 + 0 + 9 + 9).
 
 Once again consider your left and right lists. What is their similarity score?
-
-### Solution
-
-```py
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-
-with open("input", "r") as f:
-    lines = f.readlines()
-
-left = []
-right = []
-
-for line in lines:
-    # Skip the line if it is empty or only whitespace
-    if not line.strip():
-        continue
-    l, r = map(int, line.split())
-    left.append(l)
-    right.append(r)
-
-left.sort()
-right.sort()
-
-# print(list(zip(left, right)))
-total1 = 0
-total2 = 0
-count = 0
-
-
-for l, r in zip(left, right):
-    # print(f"{l} {r}")
-    distance = abs(l - r)
-    total1 += distance
-
-    count = l * right.count(l)
-    total2 += count
-
-print("Total distance:", total1) # Part 1
-print("Total count:", total2)    # Part 2
-```

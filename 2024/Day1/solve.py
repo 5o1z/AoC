@@ -8,12 +8,11 @@
 # @Description: Solution for Advent of Code 2024 Day 1: Historian Hysteria
 # @Link    : https://adventofcode.com/2024/day/1
 
-with open("input", "r") as f:
+with open("input.txt", "r") as f:
     lines = f.readlines()
 
 left = []
 right = []
-
 
 for line in lines:
     # Skip the line if it is empty or only whitespace
@@ -29,16 +28,15 @@ right.sort()
 # print(list(zip(left, right)))
 total1 = 0
 total2 = 0
-count = 0
-
+freq = 0
 
 for l, r in zip(left, right):
     # print(f"{l} {r}")
     distance = abs(l - r)
     total1 += distance
 
-    count = l * right.count(l)
-    total2 += count
+    freq = l * right.count(l)
+    total2 += freq
 
 print("Total distance:", total1) # Part 1
-print("Total count:", total2)    # Part 2
+print("Total freq:", total2)    # Part 2
