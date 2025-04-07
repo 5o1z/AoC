@@ -1,6 +1,4 @@
-### --- Day 1: Historian Hysteria ---
-
-#### --- Part One ---
+### --- Part One ---
 The Chief Historian is always present for the big Christmas sleigh launch, but nobody has seen him in months! Last anyone heard, he was visiting locations that are historically significant to the North Pole; a group of Senior Historians has asked you to accompany them as they check the places they think he was most likely to visit.
 
 As each location is checked, they will mark it on their list with a star. They figure the Chief Historian must be in one of the first fifty places they'll look, so in order to save Christmas, you need to help them get fifty stars on their list before Santa takes off on December 25th.
@@ -16,13 +14,14 @@ Throughout the Chief's office, the historically significant locations are listed
 There's just one problem: by holding the two lists up side by side (your puzzle input), it quickly becomes clear that the lists aren't very similar. Maybe you can help The Historians reconcile their lists?
 
 For example:
-
+```
 3   4
 4   3
 2   5
 1   3
 3   9
 3   3
+```
 
 Maybe the lists are only off by a small amount! To find out, pair up the numbers and measure how far apart they are. Pair up the smallest number in the left list with the smallest number in the right list, then the second-smallest left number with the second-smallest right number, and so on.
 
@@ -41,7 +40,7 @@ To find the total distance between the left list and the right list, add up the 
 
 Your actual left and right lists contain many location IDs. What is the total distance between your lists?
 
-#### --- Part Two ---
+### --- Part Two ---
 
 Your analysis only confirmed what everyone feared: the two lists of location IDs are indeed very different.
 
@@ -53,14 +52,14 @@ This time, you'll need to figure out exactly how often each number from the left
 
 Here are the same example lists again:
 
-Here are the same example lists again:
-
+```
 3   4
 4   3
 2   5
 1   3
 3   9
 3   3
+```
 
 For these example lists, here is the process of finding the similarity score:
 

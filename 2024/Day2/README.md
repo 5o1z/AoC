@@ -1,5 +1,3 @@
-### --- Day 2: Red-Nosed Reports ---
-
 ### --- Part One ---
 
 Fortunately, the first location The Historians want to search isn't a long walk from the Chief Historian's office.
