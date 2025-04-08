@@ -1,5 +1,5 @@
 // @Time : 2025/04/07 6:18 PM
-// @Author : Jinn
+// @Author : K.
 // @File : solve.c
 // @Software : Visual Studio Code
 // @Description : Solution for Advent of Code 2024 Day 1 : Historian Hysteria
@@ -48,7 +48,6 @@ int main(void)
     int right[MAX_LINES];
     size_t count = 0;
 
-    // Read the file line by line using getline().
     while ((read = getline(&line, &len, f)) != -1)
     {
         // Skip blank lines.
@@ -56,7 +55,7 @@ int main(void)
             continue;
 
         int l, r;
-        // Parse two integers from the line.
+        // Parse the line for two integers.
         if (sscanf(line, "%d %d", &l, &r) == 2)
         {
             if (count < MAX_LINES)
@@ -80,17 +79,14 @@ int main(void)
     free(line);
     fclose(f);
 
-    // Sort the left and right arrays in ascending order.
     qsort(left, count, sizeof(int), compare_int);
     qsort(right, count, sizeof(int), compare_int);
 
     long long total1 = 0, total2 = 0;
     for (size_t i = 0; i < count; i++)
     {
-        // Sum of absolute differences.
         total1 += abs(left[i] - right[i]);
 
-        // Count the frequency of left[i] in the right array.
         int freq = 0;
         for (size_t j = 0; j < count; j++)
         {

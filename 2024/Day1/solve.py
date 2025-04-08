@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 # @Time    : 2025/04/07 6:18 PM
-# @Author  : Jinn
+# @Author  : K.
 # @File    : solve.py
 # @Software: Visual Studio Code
 # @Description: Solution for Advent of Code 2024 Day 1: Historian Hysteria

@@ -1,6 +1,6 @@
 // @Time : 2025/04/07 7:35 PM
-// @Author : Jinn
-// @File : solve.py
+// @Author : K.
+// @File : solve.c
 // @Software : Visual Studio Code
 // @Description : Solution for Advent of Code 2024 Day 2: Red-Nosed Reports
 // Link : https://adventofcode.com/2024/day/2
